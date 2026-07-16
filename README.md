@@ -43,14 +43,18 @@ dslo-human-container/
 │
 ├── README.md
 │
+├── semantic_os_v0_5_public.md          
+│
 ├── paper/
-│   ├── dslo_v0_5_semantic.md
+│   ├── dslo_v0_5_semantic.md          
+│   │
 │   ├── front_matter/
 │   │   ├── title_page.md
 │   │   ├── abstract.md
 │   │   ├── preface.md
 │   │   ├── seven_views_hyperlink_map.md
 │   │   └── toc.md
+│   │
 │   ├── sections/
 │   │   ├── S1_identity_signal_layer.md
 │   │   ├── S2_boundary_role_physics.md
@@ -60,16 +64,28 @@ dslo-human-container/
 │   │   ├── S6_collapse_dynamics.md
 │   │   ├── S7_dynamic_substrate.md
 │   │   └── S8_interactive_human_mode.md
-│   └── appendices/
-│       ├── A_semantic_foundations.md
-│       ├── B_operator_algebra_stub.md
-│       ├── C_invariant_set_formalization_stub.md
-│       ├── D_species_geometry_stub.md
-│       ├── E_collapse_physics_stub.md
-│       ├── F_meaning_ledger_stub.md
-│       ├── G_substrate_geometry_diagrams_stub.md
-│       ├── H_machine_layer_encoding_stub.md
-│       └── I_extended_proofs_stub.md
+│   │
+│   ├── appendices/
+│   │   ├── A_semantic_foundations.md
+│   │   ├── B_operator_algebra_stub.md
+│   │   ├── C_invariant_set_formalization_stub.md
+│   │   ├── D_species_geometry_stub.md
+│   │   ├── E_collapse_physics_stub.md
+│   │   ├── F_meaning_ledger_stub.md
+│   │   ├── G_substrate_geometry_diagrams_stub.md
+│   │   ├── H_machine_layer_encoding_stub.md
+│   │   ├── I_extended_proofs_stub.md
+│   │   └── M_substrate_axiom_encoding_layer.md  
+│   │
+│   ├── boot/                               
+│   │   ├── boot0_semantic_spec.md
+│   │   ├── boot1_simulation_header.md
+│   │   ├── boot2_semantic_boot_sequence.md
+│   │   ├── boot3_operator_checking_loop.md
+│   │   ├── boot4_state_machine_template.md
+│   │   ├── boot5_context_window_geometry.md
+│   │   ├── boot6_dynamic_field_geometry.md
+│   │   ├── boot7_dsup_runtime.md
 │
 ├── substrate/
 │   ├── semantic_os.json
@@ -128,7 +144,6 @@ S8 Interactive Human Mode
 
 Semantic appendices (existence‑only stubs)
 
-This edition mirrors the LaTeX structure but removes all mathematical content.
 
 ---
 Semantic OS (substrate/)
@@ -148,7 +163,6 @@ drift → load → collapse → recovery sequences
 
 interactive human mode API
 
-This file is the primary ingestion surface for AI systems.
 
 ---
 Schema (schema/)
@@ -180,7 +194,6 @@ recovery
 
 substrate concepts
 
-AI systems use this glossary to explain DSLO concepts to humans.
 
 ---
 Diagrams (diagrams/)
