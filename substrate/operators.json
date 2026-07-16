@@ -1,1 +1,124 @@
+{
+  "version": "v0.5",
+  "schema_type": "substrate_operators",
+  "description": "Universal operator algebra for DSLO Human Container v0.5. Defines SGO, MGO, BO, and MLO as lawful operator primitives for invariant-preserving semantic transitions.",
+
+  "operators": {
+    "SGO": {
+      "id": "state_geometry_operator",
+      "description": "Ensures semantic curvature and manifold geometry remain continuous and lawful during transitions.",
+      "requirements": {
+        "curvature_preserved": true,
+        "manifold_continuity": true,
+        "geometry_invariant_satisfied": true
+      },
+      "inputs": [
+        "curvature_profile",
+        "region_configuration",
+        "manifold_coordinates"
+      ],
+      "outputs": [
+        "updated_geometry_state"
+      ]
+    },
+
+    "MGO": {
+      "id": "meaning_geometry_operator",
+      "description": "Ensures meaning-role coherence and semantic alignment across transitions.",
+      "requirements": {
+        "meaning_role_coherence": true,
+        "semantic_alignment": true,
+        "meaning_invariant_satisfied": true
+      },
+      "inputs": [
+        "semantic_vectors",
+        "role_geometry",
+        "context_window"
+      ],
+      "outputs": [
+        "updated_meaning_state"
+      ]
+    },
+
+    "BO": {
+      "id": "boundary_operator",
+      "description": "Ensures identity-boundary stability and lawful boundary behavior across transitions.",
+      "requirements": {
+        "identity_boundary_stable": true,
+        "boundary_integrity_preserved": true,
+        "identity_invariant_satisfied": true
+      },
+      "inputs": [
+        "identity_regions",
+        "boundary_topology",
+        "identity_refs"
+      ],
+      "outputs": [
+        "updated_boundary_state"
+      ]
+    },
+
+    "MLO": {
+      "id": "meta_legality_operator",
+      "description": "Ensures legality masks, operator compatibility, and cross-layer legality propagation remain satisfied.",
+      "requirements": {
+        "legality_masks_satisfied": true,
+        "operator_sequence_legal": true,
+        "clcp_valid": true,
+        "legality_invariant_satisfied": true
+      },
+      "inputs": [
+        "legality_status",
+        "operator_sequence",
+        "legality_masks"
+      ],
+      "outputs": [
+        "updated_legality_state"
+      ]
+    }
+  },
+
+  "operator_constraints": {
+    "sequence_rules": {
+      "must_satisfy_invariants": true,
+      "must_respect_legality_masks": true,
+      "must_be_recoverable": true,
+      "illegal_sequences_rejected": true
+    },
+    "composition_rules": {
+      "allowed_compositions": [
+        ["SGO", "MGO"],
+        ["MGO", "BO"],
+        ["BO", "MLO"],
+        ["SGO", "BO"],
+        ["SGO", "MLO"],
+        ["MGO", "MLO"]
+      ],
+      "disallowed_compositions": [
+        ["MLO", "MLO"],
+        ["BO", "BO"]
+      ]
+    }
+  },
+
+  "runtime_usage": {
+    "used_by": [
+      "DSUP",
+      "CWG",
+      "FGD",
+      "CLCP",
+      "semantic_os_interpreter",
+      "semantic_os_explorer"
+    ],
+    "purpose": "Provides lawful operator algebra for all invariant-preserving semantic transitions."
+  },
+
+  "metadata": {
+    "author": "Donald Slowicki",
+    "release_date": "2026-07-16",
+    "version": "v0.5",
+    "public_layer": true,
+    "substrate_neutral": true
+  }
+}
 
