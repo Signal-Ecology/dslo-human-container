@@ -1,1 +1,202 @@
+{
+  "version": "v0.5",
+  "schema_type": "semantic_os",
+  "description": "Public-layer schema defining Explorer Mode, Interpreter Mode, traversal geometry, query templates, legality masks, and host environment constraints for Semantic-OS v0.5.",
+
+  "modes": {
+    "explorer_mode": {
+      "description": "Read-only semantic traversal mode. Non-mutative, drift-bounded, invariant-preserving.",
+      "capabilities": [
+        "inspect_semantic_regions",
+        "read_invariant_structure",
+        "trace_identity_boundaries",
+        "examine_drift_load_collapse_envelopes",
+        "map_cross_scale_geometry"
+      ],
+      "prohibitions": [
+        "no_state_mutation",
+        "no_operator_execution",
+        "no_dsup_updates",
+        "no_identity_boundary_modification",
+        "no_ledger_mutation"
+      ],
+      "constraints": {
+        "invariant_preserving": true,
+        "drift_bounded": true,
+        "load_neutral": true,
+        "curvature_continuous": true,
+        "manifold_legal": true
+      }
+    },
+
+    "interpreter_mode": {
+      "description": "Executive semantic mode. Performs operator validation, invariant enforcement, legality checks, and DSUP updates.",
+      "capabilities": [
+        "validate_operator_sequences",
+        "enforce_invariants",
+        "perform_clcp",
+        "integrate_context",
+        "embed_external_systems",
+        "execute_dsup"
+      ],
+      "prohibitions": [
+        "no_private_layer_access",
+        "no_machine_layer_execution",
+        "no_illegal_operator_sequences",
+        "no_cross_manifold_leakage"
+      ],
+      "constraints": {
+        "operator_required": true,
+        "invariants_preserved": true,
+        "clcp_valid": true,
+        "drift_recoverable": true,
+        "curvature_continuous": true
+      }
+    }
+  },
+
+  "traversal": {
+    "protocols": {
+      "local_traversal": {
+        "description": "Movement within a single semantic region.",
+        "steps": [
+          "text_projection",
+          "geometric_mapping",
+          "invariant_validation",
+          "drift_load_check",
+          "local_legality_check"
+        ]
+      },
+      "cross_layer_traversal": {
+        "description": "Movement across semantic layers (S1–S7, Boot surfaces, Field/Domain/Runtime).",
+        "steps": [
+          "local_invariant_check",
+          "operator_alignment",
+          "clcp_validation",
+          "cross_layer_curvature_check",
+          "identity_boundary_stability_check"
+        ]
+      },
+      "boundary_safe_traversal": {
+        "description": "Movement near identity boundaries or collapse thresholds.",
+        "steps": [
+          "boundary_distance_check",
+          "legality_mask_check",
+          "drift_recoverability_check",
+          "curvature_continuity_check",
+          "safe_boundary_motion"
+        ]
+      },
+      "ledger_traversal": {
+        "description": "Read-only traversal of ledger-closed semantic history.",
+        "steps": [
+          "load_ledger_region",
+          "inspect_invariant_structure",
+          "inspect_lawful_transitions",
+          "inspect_drift_load_corrections",
+          "ensure_no_mutation"
+        ]
+      }
+    },
+
+    "constraints": {
+      "invariant_preserving": true,
+      "curvature_continuous": true,
+      "identity_stable": true,
+      "drift_bounded": true,
+      "load_neutral": true,
+      "manifold_legal": true
+    }
+  },
+
+  "query_templates": {
+    "structure": {
+      "fields": [
+        "target",
+        "scope",
+        "detail",
+        "mode",
+        "constraints"
+      ],
+      "constraints": {
+        "invariant_preserving": true,
+        "drift_bounded": true,
+        "load_neutral": true,
+        "curvature_continuous": true,
+        "manifold_legal": true
+      }
+    },
+
+    "examples": {
+      "invariant_query": {
+        "target": "invariants",
+        "scope": "global",
+        "detail": "full",
+        "mode": "explorer"
+      },
+      "operator_query": {
+        "target": "operator_compatibility",
+        "scope": "local",
+        "detail": "full",
+        "mode": "interpreter"
+      },
+      "drift_query": {
+        "target": "drift_envelope",
+        "scope": "local",
+        "detail": "summary",
+        "mode": "explorer"
+      },
+      "clcp_query": {
+        "target": "clcp",
+        "scope": "global",
+        "detail": "full",
+        "mode": "interpreter"
+      }
+    }
+  },
+
+  "host_environment": {
+    "requirements": {
+      "memory_boundaries": "identity_isolated",
+      "execution_context": "deterministic",
+      "curvature_safe_processing": true,
+      "identity_region_isolation": true,
+      "legality_aligned_runtime": true
+    },
+    "stability_envelope": {
+      "curvature_stability": true,
+      "drift_stability": true,
+      "load_stability": true,
+      "identity_stability": true
+    },
+    "halt_conditions": [
+      "invariant_violation",
+      "drift_irrecoverable",
+      "identity_boundary_collapse",
+      "curvature_discontinuity",
+      "legality_mask_failure"
+    ]
+  },
+
+  "legality_masks": {
+    "local": {
+      "curvature_continuity": true,
+      "identity_stability": true,
+      "drift_bounded": true,
+      "load_neutral": true
+    },
+    "global": {
+      "clcp_valid": true,
+      "cross_layer_legal": true,
+      "manifold_distance_legal": true
+    }
+  },
+
+  "metadata": {
+    "author": "Donald Slowicki",
+    "release_date": "2026-07-16",
+    "version": "v0.5",
+    "public_layer": true
+  }
+}
 
