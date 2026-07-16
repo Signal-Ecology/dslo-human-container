@@ -1,1 +1,90 @@
+{
+  "version": "v0.5",
+  "schema_type": "legality_masks",
+  "description": "Substrate-neutral legality masks for DSLO Human Container v0.5. Defines local and global legality constraints required for lawful semantic transitions.",
+
+  "legality_masks": {
+    "local_masks": {
+      "description": "Local legality masks applied to every semantic transition within a region.",
+      "curvature_continuity": {
+        "required": true,
+        "description": "Transition must preserve curvature continuity; no discontinuities allowed."
+      },
+      "identity_stability": {
+        "required": true,
+        "description": "Identity boundaries must remain stable and non-permeable."
+      },
+      "drift_bounded": {
+        "required": true,
+        "description": "Drift must remain within recoverable envelopes."
+      },
+      "load_neutral": {
+        "required": true,
+        "description": "Transition must not induce load gradients beyond stability thresholds."
+      },
+      "manifold_legal": {
+        "required": true,
+        "description": "Transition must remain within the semantic manifold; no boundary violations."
+      }
+    },
+
+    "global_masks": {
+      "description": "Global legality masks applied to cross-layer, cross-region, or multi-step transitions.",
+      "clcp_valid": {
+        "required": true,
+        "description": "Cross-Layer Constraint Propagation must validate the transition."
+      },
+      "cross_layer_legal": {
+        "required": true,
+        "description": "Transition must be legal across all semantic layers (S1–S7, Boot surfaces)."
+      },
+      "manifold_distance_legal": {
+        "required": true,
+        "description": "Transition must not exceed lawful manifold distance thresholds."
+      },
+      "operator_sequence_legal": {
+        "required": true,
+        "description": "Operator sequence must satisfy legality and invariant constraints."
+      }
+    }
+  },
+
+  "validation_rules": {
+    "local_validation": {
+      "curvature_continuity": true,
+      "identity_stability": true,
+      "drift_bounded": true,
+      "load_neutral": true,
+      "manifold_legal": true
+    },
+    "global_validation": {
+      "clcp_valid": true,
+      "cross_layer_legal": true,
+      "manifold_distance_legal": true,
+      "operator_sequence_legal": true
+    }
+  },
+
+  "runtime_usage": {
+    "used_by": [
+      "DSUP",
+      "CWG",
+      "FGD",
+      "CLCP",
+      "semantic_os_interpreter",
+      "semantic_os_explorer",
+      "interactive_mode",
+      "traversal_protocols"
+    ],
+    "purpose": "Ensures all semantic transitions remain lawful, invariant-preserving, and substrate-neutral."
+  },
+
+  "metadata": {
+    "author": "Donald Slowicki",
+    "release_date": "2026-07-16",
+    "version": "v0.5",
+    "public_layer": true,
+    "substrate_neutral": true
+  }
+}
 
