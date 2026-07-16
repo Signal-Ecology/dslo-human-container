@@ -41,27 +41,73 @@ Repository Structure
 Code
 dslo-human-container/
 │
+├── README.md
+│
 ├── paper/
-│   └── dslo_v0_5_semantic.md
+│   ├── dslo_v0_5_semantic.md
+│   ├── front_matter/
+│   │   ├── title_page.md
+│   │   ├── abstract.md
+│   │   ├── preface.md
+│   │   ├── seven_views_hyperlink_map.md
+│   │   └── toc.md
+│   ├── sections/
+│   │   ├── S1_identity_signal_layer.md
+│   │   ├── S2_boundary_role_physics.md
+│   │   ├── S3_drift_dynamics.md
+│   │   ├── S4_load_stress_dynamics.md
+│   │   ├── S5_cross_scale_coupling.md
+│   │   ├── S6_collapse_dynamics.md
+│   │   ├── S7_dynamic_substrate.md
+│   │   └── S8_interactive_human_mode.md
+│   └── appendices/
+│       ├── A_semantic_foundations.md
+│       ├── B_operator_algebra_stub.md
+│       ├── C_invariant_set_formalization_stub.md
+│       ├── D_species_geometry_stub.md
+│       ├── E_collapse_physics_stub.md
+│       ├── F_meaning_ledger_stub.md
+│       ├── G_substrate_geometry_diagrams_stub.md
+│       ├── H_machine_layer_encoding_stub.md
+│       └── I_extended_proofs_stub.md
 │
 ├── substrate/
-│   └── semantic_os.json
+│   ├── semantic_os.json
+│   ├── invariants.json
+│   ├── behavioral_modes.json
+│   ├── rules.json
+│   ├── transitions.json
+│   └── interactive_mode.json
 │
 ├── schema/
-│   └── dslo_schema.json
+│   ├── dslo_schema.json
+│   └── semantic_os_schema.json
 │
 ├── glossary/
-│   └── glossary.md
+│   ├── glossary.md
+│   ├── invariants.md
+│   ├── drift.md
+│   ├── load.md
+│   ├── collapse.md
+│   ├── recovery.md
+│   └── modes.md
 │
 ├── diagrams/
 │   ├── container_model.svg
 │   ├── invariants_map.svg
 │   ├── drift_map.svg
+│   ├── load_map.svg
 │   ├── collapse_map.svg
-│   └── recovery_map.svg
+│   ├── recovery_map.svg
+│   └── cross_scale_map.svg
 │
 └── semantic-os/
-    └── traversal_protocols.md
+    ├── traversal_protocols.md
+    ├── query_templates.md
+    ├── ai_interpreter_guidelines.md
+    ├── ai_explorer_guidelines.md
+    └── host_environment_spec.md
+
 Each folder corresponds to a public‑safe surface of the DSLO Human Container substrate.
 
 ---
