@@ -1,1 +1,171 @@
+{
+  "version": "v0.5",
+  "schema_type": "dsup_runtime",
+  "description": "Substrate-neutral DSUP runtime schema for DSLO Human Container v0.5. Defines state fields, update constraints, legality requirements, and halt conditions for lawful semantic state updates.",
+
+  "dsup_runtime": {
+    "state": {
+      "description": "The DSUP state represents the full semantic substrate configuration at time t.",
+      "fields": {
+        "curvature_profile": {
+          "type": "number",
+          "description": "Semantic curvature describing meaning continuity and geometric stability."
+        },
+        "drift_vector": {
+          "type": "number",
+          "description": "Drift accumulation across the manifold."
+        },
+        "load_gradient": {
+          "type": "number",
+          "description": "Load/stress gradient across semantic regions."
+        },
+        "identity_regions": {
+          "type": "array",
+          "description": "Identity-boundary regions and their stability flags."
+        },
+        "region_configuration": {
+          "type": "object",
+          "description": "Topological and geometric configuration of semantic regions."
+        },
+        "legality_status": {
+          "type": "object",
+          "description": "Legality mask results for the current state."
+        }
+      }
+    },
+
+    "update_function": {
+      "description": "DSUP computes the next lawful semantic state S(t+1) from S(t).",
+      "form": "S_{t+1} = F(S_t, D_t, C_t)",
+      "inputs": {
+        "S_t": "current_state",
+        "D_t": "drift_load_context",
+        "C_t": "curvature_identity_context"
+      },
+      "outputs": {
+        "S_t+1": "updated_state"
+      }
+    },
+
+    "update_constraints": {
+      "description": "All DSUP updates must satisfy invariants, legality masks, and operator constraints.",
+      "requirements": {
+        "meaning_invariant_preserved": true,
+        "identity_invariant_preserved": true,
+        "geometry_invariant_preserved": true,
+        "legality_invariant_preserved": true,
+        "operator_sequence_lawful": true,
+        "clcp_valid": true,
+        "drift_recoverable": true,
+        "load_within_stability": true,
+        "curvature_continuous": true
+      }
+    },
+
+    "operator_requirements": {
+      "description": "DSUP updates must validate at least one operator.",
+      "operators": [
+        "SGO",
+        "MGO",
+        "BO",
+        "MLO"
+      ],
+      "rules": {
+        "operator_required": true,
+        "illegal_sequences_rejected": true
+      }
+    },
+
+    "legality_requirements": {
+      "description": "DSUP updates must satisfy local and global legality masks.",
+      "local_masks": {
+        "curvature_continuity": true,
+        "identity_stability": true,
+        "drift_bounded": true,
+        "load_neutral": true,
+        "manifold_legal": true
+      },
+      "global_masks": {
+        "clcp_valid": true,
+        "cross_layer_legal": true,
+        "manifold_distance_legal": true,
+        "operator_sequence_legal": true
+      }
+    },
+
+    "halt_conditions": {
+      "description": "DSUP must halt and enter recovery mode if any invariant or legality condition is violated.",
+      "conditions": [
+        {
+          "id": "HC1",
+          "description": "Drift exceeds irrecoverable threshold.",
+          "trigger": "drift_vector >= drift_irrecoverable"
+        },
+        {
+          "id": "HC2",
+          "description": "Load exceeds failure threshold.",
+          "trigger": "load_gradient >= load_failure_threshold"
+        },
+        {
+          "id": "HC3",
+          "description": "Identity boundary collapse.",
+          "trigger": "identity_boundary_integrity == collapsed"
+        },
+        {
+          "id": "HC4",
+          "description": "Curvature discontinuity.",
+          "trigger": "curvature_profile >= curvature_collapse_threshold"
+        },
+        {
+          "id": "HC5",
+          "description": "Operator legality violation.",
+          "trigger": "operator_sequence_legal == false"
+        },
+        {
+          "id": "HC6",
+          "description": "Legality invariant violation.",
+          "trigger": "legality_invariant_satisfied == false"
+        }
+      ]
+    },
+
+    "recovery_mode": {
+      "description": "Activated when DSUP halts due to invariant or legality failure.",
+      "actions": [
+        "restore_invariant_baseline",
+        "reduce_drift_vector",
+        "reduce_load_gradient",
+        "reconstruct_identity_boundaries",
+        "restore_curvature_continuity",
+        "revalidate_operator_sequences",
+        "reapply_legality_masks"
+      ],
+      "constraints": {
+        "must_return_to_stable_mode": true,
+        "must_satisfy_all_invariants": true
+      }
+    }
+  },
+
+  "runtime_usage": {
+    "used_by": [
+      "semantic_os_interpreter",
+      "semantic_os_explorer",
+      "interactive_mode",
+      "traversal_protocols",
+      "CWG",
+      "FGD",
+      "CLCP"
+    ],
+    "purpose": "Provides lawful state update mechanism for the DSLO Human Container."
+  },
+
+  "metadata": {
+    "author": "Donald Slowicki",
+    "release_date": "2026-07-16",
+    "version": "v0.5",
+    "public_layer": true,
+    "substrate_neutral": true
+  }
+}
 
