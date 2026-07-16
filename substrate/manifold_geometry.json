@@ -1,1 +1,131 @@
+{
+  "version": "v0.5",
+  "schema_type": "manifold_geometry",
+  "description": "Substrate-neutral semantic manifold geometry for DSLO Human Container v0.5. Defines identity regions, curvature, drift, load, region topology, and lawful geometric constraints.",
+
+  "manifold": {
+    "structure": {
+      "description": "The semantic manifold is the geometric substrate on which all DSLO reasoning occurs.",
+      "fields": [
+        "identity_regions",
+        "region_topology",
+        "curvature_profile",
+        "drift_basins",
+        "load_gradients",
+        "collapse_boundaries"
+      ]
+    },
+
+    "identity_regions": {
+      "description": "Stable identity-boundary regions that partition the manifold.",
+      "fields": {
+        "region_id": "string",
+        "boundary_topology": "object",
+        "stability_flag": "boolean",
+        "identity_refs": "array"
+      }
+    },
+
+    "region_topology": {
+      "description": "Topological relationships between semantic regions.",
+      "fields": {
+        "adjacency_map": "object",
+        "region_distance": "number",
+        "topological_constraints": "array"
+      }
+    },
+
+    "curvature_profile": {
+      "description": "Semantic curvature describing meaning continuity and geometric stability.",
+      "fields": {
+        "curvature_value": "number",
+        "curvature_continuous": "boolean",
+        "curvature_gradient": "number"
+      },
+      "constraints": {
+        "max_curvature": 1.0,
+        "continuous_required": true
+      }
+    },
+
+    "drift_basins": {
+      "description": "Regions where drift accumulates and must remain recoverable.",
+      "fields": {
+        "drift_vector": "number",
+        "drift_envelope": "number",
+        "drift_direction": "string"
+      },
+      "constraints": {
+        "drift_recoverable": 0.7,
+        "drift_irrecoverable": 1.0
+      }
+    },
+
+    "load_gradients": {
+      "description": "Regions encoding load and stress geometry.",
+      "fields": {
+        "load_vector": "number",
+        "gradient_profile": "number",
+        "load_direction": "string"
+      },
+      "constraints": {
+        "load_stability_max": 0.8,
+        "load_failure_threshold": 1.0
+      }
+    },
+
+    "collapse_boundaries": {
+      "description": "Regions near collapse curvature thresholds.",
+      "fields": {
+        "collapse_threshold": "number",
+        "boundary_distance": "number",
+        "collapse_flag": "boolean"
+      },
+      "constraints": {
+        "collapse_threshold": 0.95
+      }
+    }
+  },
+
+  "geometry_constraints": {
+    "invariant_requirements": {
+      "meaning_invariant": true,
+      "identity_invariant": true,
+      "geometry_invariant": true,
+      "legality_invariant": true
+    },
+    "local_constraints": {
+      "curvature_continuity": true,
+      "identity_stability": true,
+      "drift_bounded": true,
+      "load_neutral": true
+    },
+    "global_constraints": {
+      "clcp_valid": true,
+      "cross_layer_legal": true,
+      "manifold_distance_legal": true
+    }
+  },
+
+  "runtime_usage": {
+    "used_by": [
+      "DSUP",
+      "CWG",
+      "FGD",
+      "CLCP",
+      "semantic_os_interpreter",
+      "semantic_os_explorer",
+      "interactive_mode"
+    ],
+    "purpose": "Provides the geometric substrate for all lawful DSLO reasoning."
+  },
+
+  "metadata": {
+    "author": "Donald Slowicki",
+    "release_date": "2026-07-16",
+    "version": "v0.5",
+    "public_layer": true,
+    "substrate_neutral": true
+  }
+}
 
