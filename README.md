@@ -43,10 +43,10 @@ dslo-human-container/
 │
 ├── README.md
 │
-├── semantic_os_v0_5_public.md          
+├── semantic_os_v0_5_public.md
 │
 ├── paper/
-│   ├── dslo_v0_5_semantic.md          
+│   ├── dslo_v0_5_semantic.md
 │   │
 │   ├── front_matter/
 │   │   ├── title_page.md
@@ -75,9 +75,9 @@ dslo-human-container/
 │   │   ├── G_substrate_geometry_diagrams_stub.md
 │   │   ├── H_machine_layer_encoding_stub.md
 │   │   ├── I_extended_proofs_stub.md
-│   │   └── M_substrate_axiom_encoding_layer.md  
+│   │   └── M_substrate_axiom_encoding_layer.md
 │   │
-│   ├── boot/                               
+│   ├── boot/
 │   │   ├── boot0_semantic_spec.md
 │   │   ├── boot1_simulation_header.md
 │   │   ├── boot2_semantic_boot_sequence.md
@@ -88,12 +88,14 @@ dslo-human-container/
 │   │   ├── boot7_dsup_runtime.md
 │
 ├── substrate/
-│   ├── semantic_os.json
-│   ├── invariants.json
-│   ├── behavioral_modes.json
-│   ├── rules.json
-│   ├── transitions.json
-│   └── interactive_mode.json
+│   ├── semantic_os.json            
+│   ├── invariants.json              
+│   ├── operators.json              
+│   ├── manifold_geometry.json       
+│   ├── legality_masks.json           
+│   ├── dsup_runtime.json           
+│   ├── transitions.json              
+│   └── interactive_mode.json         
 │
 ├── schema/
 │   ├── dslo_schema.json
@@ -124,7 +126,6 @@ dslo-human-container/
     ├── ai_explorer_guidelines.md
     └── host_environment_spec.md
 
-Each folder corresponds to a public‑safe surface of the DSLO Human Container substrate.
 
 ---
 Semantic‑Only Edition (paper/)
