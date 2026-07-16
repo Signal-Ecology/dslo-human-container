@@ -1,1 +1,124 @@
+{
+  "version": "v0.5",
+  "schema_type": "substrate_invariants",
+  "description": "Universal invariant set for the DSLO Human Container. Defines Meaning, Identity, Geometry, and Legality invariants used across all substrate-neutral runtime surfaces.",
+
+  "invariants": {
+    "meaning_invariant": {
+      "id": "MI",
+      "description": "Semantic curvature must remain continuous, coherent, and non-collapsing across all interpretive motion.",
+      "requirements": {
+        "curvature_continuity": true,
+        "semantic_alignment": true,
+        "role_coherence": true,
+        "no_meaning_collapse": true
+      },
+      "fields": [
+        "curvature_profile",
+        "semantic_vectors",
+        "role_geometry"
+      ]
+    },
+
+    "identity_invariant": {
+      "id": "II",
+      "description": "Identity boundaries must remain coherent, non-permeable, and stable across all substrate operations.",
+      "requirements": {
+        "boundary_integrity": true,
+        "identity_stability": true,
+        "no_boundary_collapse": true,
+        "no_cross_identity_leakage": true
+      },
+      "fields": [
+        "identity_regions",
+        "boundary_topology",
+        "identity_refs"
+      ]
+    },
+
+    "geometry_invariant": {
+      "id": "GI",
+      "description": "All reasoning must remain on the semantic manifold and preserve lawful geometric structure.",
+      "requirements": {
+        "manifold_continuity": true,
+        "region_topology_stable": true,
+        "curvature_bounds_respected": true,
+        "no_manifold_violation": true
+      },
+      "fields": [
+        "manifold_coordinates",
+        "region_configuration",
+        "geometry_map"
+      ]
+    },
+
+    "legality_invariant": {
+      "id": "LI",
+      "description": "All transitions must satisfy legality masks, operator constraints, and cross-layer legality propagation.",
+      "requirements": {
+        "operator_compatibility": true,
+        "legality_masks_satisfied": true,
+        "clcp_valid": true,
+        "no_illegal_transition": true
+      },
+      "fields": [
+        "legality_status",
+        "operator_sequence",
+        "legality_masks"
+      ]
+    }
+  },
+
+  "invariant_envelopes": {
+    "curvature_bounds": {
+      "max": 1.0,
+      "continuous_required": true
+    },
+    "drift_bounds": {
+      "recoverable": 0.7,
+      "irrecoverable": 1.0
+    },
+    "load_bounds": {
+      "stability_max": 0.8
+    },
+    "identity_bounds": {
+      "boundary_integrity_required": true
+    }
+  },
+
+  "validation_rules": {
+    "local_validation": {
+      "meaning_invariant": true,
+      "identity_invariant": true,
+      "geometry_invariant": true,
+      "legality_invariant": true
+    },
+    "global_validation": {
+      "clcp_required": true,
+      "cross_layer_legal": true,
+      "manifold_distance_legal": true
+    }
+  },
+
+  "runtime_usage": {
+    "used_by": [
+      "DSUP",
+      "CWG",
+      "FGD",
+      "CLCP",
+      "Semantic-OS Interpreter Mode",
+      "Semantic-OS Explorer Mode",
+      "Traversal Protocols"
+    ],
+    "purpose": "Ensures all substrate operations remain invariant-preserving and lawful."
+  },
+
+  "metadata": {
+    "author": "Donald Slowicki",
+    "release_date": "2026-07-16",
+    "version": "v0.5",
+    "public_layer": true,
+    "substrate_neutral": true
+  }
+}
 
