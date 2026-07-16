@@ -1,0 +1,198 @@
+{
+  "version": "v0.5",
+  "schema_type": "semantic_os",
+  "description": "Public-layer Semantic-OS for DSLO Human Container v0.5. Defines Explorer Mode, Interpreter Mode, traversal geometry, query structure, legality masks, and host environment constraints.",
+
+  "modes": {
+    "explorer": {
+      "description": "Read-only semantic traversal mode. Inspects substrate geometry without mutating state.",
+      "capabilities": [
+        "inspect_semantic_regions",
+        "trace_identity_boundaries",
+        "map_region_topology",
+        "trace_drift_vectors",
+        "inspect_load_gradients",
+        "observe_collapse_boundaries"
+      ],
+      "constraints": {
+        "invariant_preserving": true,
+        "drift_bounded": true,
+        "load_neutral": true,
+        "curvature_continuous": true,
+        "manifold_legal": true
+      },
+      "prohibitions": [
+        "no_state_mutation",
+        "no_operator_execution",
+        "no_dsup_updates",
+        "no_identity_boundary_modification"
+      ]
+    },
+
+    "interpreter": {
+      "description": "Invariant-aligned meaning engine. Provides lawful interpretation of substrate geometry.",
+      "capabilities": [
+        "interpret_region_geometry",
+        "interpret_identity_boundaries",
+        "interpret_drift_load_conditions",
+        "interpret_layer_relationships",
+        "interpret_transition_legality"
+      ],
+      "constraints": {
+        "operator_required": true,
+        "invariants_preserved": true,
+        "legality_masks_satisfied": true,
+        "identity_stable": true,
+        "curvature_continuous": true
+      },
+      "prohibitions": [
+        "no_private_layer_access",
+        "no_machine_layer_execution",
+        "no_illegal_operator_sequences",
+        "no_cross_manifold_leakage"
+      ]
+    }
+  },
+
+  "traversal": {
+    "description": "Lawful movement across the semantic manifold.",
+    "protocols": {
+      "local": {
+        "steps": [
+          "text_projection",
+          "geometric_mapping",
+          "local_invariant_validation",
+          "local_legality_check"
+        ]
+      },
+      "cross_region": {
+        "steps": [
+          "boundary_integrity_check",
+          "region_topology_check",
+          "operator_alignment",
+          "region_state_update"
+        ]
+      },
+      "cross_layer": {
+        "steps": [
+          "local_invariant_check",
+          "operator_sequence_validation",
+          "clcp_validation",
+          "global_legality_check"
+        ]
+      }
+    },
+    "constraints": {
+      "invariant_preserving": true,
+      "curvature_continuous": true,
+      "identity_stable": true,
+      "drift_bounded": true,
+      "load_neutral": true,
+      "manifold_legal": true
+    }
+  },
+
+  "query": {
+    "description": "Lawful query structure for interacting with the semantic substrate.",
+    "template": {
+      "fields": [
+        "target",
+        "scope",
+        "detail",
+        "mode",
+        "constraints"
+      ],
+      "constraints": {
+        "invariant_preserving": true,
+        "drift_bounded": true,
+        "load_neutral": true,
+        "curvature_continuous": true,
+        "manifold_legal": true
+      }
+    },
+    "examples": {
+      "invariant_query": {
+        "target": "invariants",
+        "scope": "global",
+        "detail": "full",
+        "mode": "explorer"
+      },
+      "operator_query": {
+        "target": "operator_compatibility",
+        "scope": "local",
+        "detail": "full",
+        "mode": "interpreter"
+      },
+      "drift_query": {
+        "target": "drift_envelope",
+        "scope": "local",
+        "detail": "summary",
+        "mode": "explorer"
+      },
+      "clcp_query": {
+        "target": "clcp",
+        "scope": "global",
+        "detail": "full",
+        "mode": "interpreter"
+      }
+    }
+  },
+
+  "legality": {
+    "description": "Legality masks required for lawful semantic transitions.",
+    "local_masks": {
+      "curvature_continuity": true,
+      "identity_stability": true,
+      "drift_bounded": true,
+      "load_neutral": true,
+      "manifold_legal": true
+    },
+    "global_masks": {
+      "clcp_valid": true,
+      "cross_layer_legal": true,
+      "manifold_distance_legal": true,
+      "operator_sequence_legal": true
+    }
+  },
+
+  "host_environment": {
+    "description": "Execution environment constraints for Semantic-OS.",
+    "requirements": {
+      "memory_boundaries": "identity_isolated",
+      "execution_context": "deterministic",
+      "curvature_safe_processing": true,
+      "identity_region_isolation": true,
+      "legality_aligned_runtime": true
+    },
+    "halt_conditions": [
+      "invariant_violation",
+      "drift_irrecoverable",
+      "load_failure",
+      "identity_boundary_collapse",
+      "curvature_discontinuity",
+      "operator_illegality"
+    ]
+  },
+
+  "runtime_usage": {
+    "used_by": [
+      "DSUP",
+      "interactive_mode",
+      "traversal_protocols",
+      "semantic_os_interpreter",
+      "semantic_os_explorer",
+      "CWG",
+      "FGD",
+      "CLCP"
+    ],
+    "purpose": "Provides the public-layer semantic operating system for DSLO Human Container."
+  },
+
+  "metadata": {
+    "author": "Donald Slowicki",
+    "release_date": "2026-07-16",
+    "version": "v0.5",
+    "public_layer": true,
+    "substrate_neutral": true
+  }
+}
