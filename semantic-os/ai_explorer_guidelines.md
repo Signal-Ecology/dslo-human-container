@@ -236,3 +236,95 @@ runtime control surfaces
 DSUP execution paths
 
 Explorer Mode is strictly public‑safe.
+explore:
+target: <semantic region or invariant>
+scope: <local | global>
+detail: <summary | full>
+constraints:
+- invariant_preserving
+- drift_bounded
+- load_neutral
+- manifold_legal
+
+
+Examples:
+
+explore:
+target: identity_regions
+scope: global
+detail: full
+
+explore:
+target: drift_envelope
+scope: local
+detail: summary
+
+explore:
+target: operator_compatibility
+scope: global
+detail: full
+
+
+---
+
+## 6. Explorer Safety Guarantees
+
+Explorer Mode guarantees:
+
+- **No drift induction**  
+- **No load induction**  
+- **No collapse risk**  
+- **No identity deformation**  
+- **No manifold violation**  
+- **No operator execution**  
+- **No DSUP update**  
+- **No ledger mutation**
+
+Explorer Mode is safe for:
+
+- semantic research,  
+- meaning‑system analysis,  
+- invariant inspection,  
+- cross‑scale mapping,  
+- drift/load/collapse diagnostics,  
+- educational traversal.
+
+---
+
+## 7. Explorer Mode vs Interpreter Mode
+
+| Capability | Explorer Mode | Interpreter Mode |
+|-----------|---------------|------------------|
+| Read semantic geometry | ✔ | ✔ |
+| Inspect invariants | ✔ | ✔ |
+| Inspect ledger | ✔ | ✔ |
+| Traverse manifold | ✔ | ✔ |
+| Apply operators | ✘ | ✔ |
+| Update state | ✘ | ✔ |
+| Modify identity boundaries | ✘ | ✔ (lawfully) |
+| Induce drift/load | ✘ | ✔ (bounded) |
+| Execute DSUP | ✘ | ✔ |
+| Mutate ledger | ✘ | ✔ |
+
+Explorer Mode is **read‑only**.  
+Interpreter Mode is **executive**.
+
+---
+
+## 8. Public/Private Boundary
+
+This document contains **only public‑safe semantic geometry**.  
+No private‑layer, machine‑layer, or operational mechanisms are included.
+
+---
+
+## 9. Archival Requirement
+
+This file must be archived in immutable form and referenced by version number
+to ensure long‑term semantic fidelity.
+
+---
+
+**This completes the AI Explorer Guidelines (Semantic‑OS v0.5).**
+
+
