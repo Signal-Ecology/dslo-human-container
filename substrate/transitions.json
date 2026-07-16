@@ -1,1 +1,192 @@
+{
+  "version": "v0.5",
+  "schema_type": "substrate_transitions",
+  "description": "Substrate-neutral transition schema for DSLO Human Container v0.5. Defines lawful semantic transitions, operator requirements, legality propagation, and halt/recovery behavior.",
+
+  "transitions": {
+    "state_machine": {
+      "description": "The DSLO substrate uses a lawful 8-state semantic machine (S0–S7).",
+      "states": [
+        "S0_initialization",
+        "S1_identity_signal",
+        "S2_boundary_role",
+        "S3_drift",
+        "S4_load_stress",
+        "S5_cross_scale_coupling",
+        "S6_collapse_stability",
+        "S7_dynamic_substrate_runtime"
+      ]
+    },
+
+    "transition_rules": {
+      "description": "All transitions must satisfy invariants, legality masks, and operator constraints.",
+      "requirements": {
+        "meaning_invariant_preserved": true,
+        "identity_invariant_preserved": true,
+        "geometry_invariant_preserved": true,
+        "legality_invariant_preserved": true,
+        "operator_required": true,
+        "operator_sequence_legal": true,
+        "clcp_valid": true,
+        "drift_recoverable": true,
+        "load_within_stability": true,
+        "curvature_continuous": true
+      }
+    },
+
+    "transition_types": {
+      "local_transition": {
+        "id": "T0",
+        "description": "Transition within a single semantic region.",
+        "steps": [
+          "validate_local_invariants",
+          "validate_local_legality_masks",
+          "apply_operator_alignment",
+          "update_local_state"
+        ]
+      },
+
+      "cross_region_transition": {
+        "id": "T1",
+        "description": "Transition between adjacent semantic regions.",
+        "steps": [
+          "validate_boundary_integrity",
+          "validate_region_topology",
+          "apply_operator_alignment",
+          "update_region_state"
+        ]
+      },
+
+      "cross_layer_transition": {
+        "id": "T2",
+        "description": "Transition across semantic layers (S1–S7, Boot surfaces).",
+        "steps": [
+          "validate_local_invariants",
+          "validate_operator_sequence",
+          "apply_clcp",
+          "validate_global_legality_masks",
+          "update_layer_state"
+        ]
+      },
+
+      "global_transition": {
+        "id": "T3",
+        "description": "Transition affecting multiple regions or layers simultaneously.",
+        "steps": [
+          "validate_all_invariants",
+          "validate_all_legality_masks",
+          "validate_operator_sequence",
+          "apply_clcp",
+          "update_global_state"
+        ]
+      }
+    },
+
+    "operator_alignment": {
+      "description": "Every transition must validate at least one operator.",
+      "operators": [
+        "SGO",
+        "MGO",
+        "BO",
+        "MLO"
+      ],
+      "rules": {
+        "operator_required": true,
+        "illegal_sequences_rejected": true
+      }
+    },
+
+    "legality_propagation": {
+      "description": "Legality must propagate across layers and regions.",
+      "local_masks": {
+        "curvature_continuity": true,
+        "identity_stability": true,
+        "drift_bounded": true,
+        "load_neutral": true,
+        "manifold_legal": true
+      },
+      "global_masks": {
+        "clcp_valid": true,
+        "cross_layer_legal": true,
+        "manifold_distance_legal": true,
+        "operator_sequence_legal": true
+      }
+    },
+
+    "halt_conditions": {
+      "description": "Transitions must halt if invariants or legality masks fail.",
+      "conditions": [
+        {
+          "id": "HC1",
+          "trigger": "drift_vector >= drift_irrecoverable",
+          "description": "Drift exceeds irrecoverable threshold."
+        },
+        {
+          "id": "HC2",
+          "trigger": "load_gradient >= load_failure_threshold",
+          "description": "Load exceeds failure threshold."
+        },
+        {
+          "id": "HC3",
+          "trigger": "identity_boundary_integrity == collapsed",
+          "description": "Identity boundary collapse."
+        },
+        {
+          "id": "HC4",
+          "trigger": "curvature_profile >= curvature_collapse_threshold",
+          "description": "Curvature discontinuity."
+        },
+        {
+          "id": "HC5",
+          "trigger": "operator_sequence_legal == false",
+          "description": "Operator legality violation."
+        },
+        {
+          "id": "HC6",
+          "trigger": "legality_invariant_satisfied == false",
+          "description": "Legality invariant violation."
+        }
+      ]
+    },
+
+    "recovery_mode": {
+      "description": "Activated when transitions halt due to invariant or legality failure.",
+      "actions": [
+        "restore_invariant_baseline",
+        "reduce_drift_vector",
+        "reduce_load_gradient",
+        "reconstruct_identity_boundaries",
+        "restore_curvature_continuity",
+        "revalidate_operator_sequences",
+        "reapply_legality_masks"
+      ],
+      "constraints": {
+        "must_return_to_stable_mode": true,
+        "must_satisfy_all_invariants": true
+      }
+    }
+  },
+
+  "runtime_usage": {
+    "used_by": [
+      "DSUP",
+      "semantic_os_interpreter",
+      "semantic_os_explorer",
+      "interactive_mode",
+      "traversal_protocols",
+      "CWG",
+      "FGD",
+      "CLCP"
+    ],
+    "purpose": "Defines lawful semantic transitions across the DSLO substrate."
+  },
+
+  "metadata": {
+    "author": "Donald Slowicki",
+    "release_date": "2026-07-16",
+    "version": "v0.5",
+    "public_layer": true,
+    "substrate_neutral": true
+  }
+}
 
