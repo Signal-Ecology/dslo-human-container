@@ -1,1 +1,159 @@
+{
+  "version": "v0.5",
+  "schema_type": "interactive_mode",
+  "description": "Substrate-neutral interactive interface for DSLO Human Container v0.5. Defines lawful interaction between an AI system and the dynamic semantic substrate without domain-specific geometry.",
+
+  "interactive_mode": {
+    "host": {
+      "description": "The substrate host provides invariant geometry, drift/load envelopes, identity-boundary topology, and lawful interpretive constraints.",
+      "provides": [
+        "substrate_invariants",
+        "semantic_curvature_profile",
+        "identity_boundary_map",
+        "drift_envelope",
+        "load_gradient_envelope",
+        "cross_scale_coupling_geometry"
+      ],
+      "constraints": {
+        "non_mutative": true,
+        "public_layer_only": true,
+        "substrate_neutral": true
+      }
+    },
+
+    "explorer": {
+      "description": "Read-only traversal engine for inspecting substrate geometry, drift/load dynamics, identity boundaries, and lawful regions.",
+      "capabilities": [
+        "traverse_manifold_regions",
+        "inspect_identity_boundaries",
+        "trace_drift_vectors",
+        "inspect_load_gradients",
+        "map_region_topology",
+        "report_structural_state"
+      ],
+      "constraints": {
+        "invariant_preserving": true,
+        "drift_bounded": true,
+        "load_neutral": true,
+        "curvature_continuous": true,
+        "manifold_legal": true
+      },
+      "prohibitions": [
+        "no_state_mutation",
+        "no_operator_execution",
+        "no_context_modification",
+        "no_dsup_updates",
+        "no_identity_boundary_changes"
+      ]
+    },
+
+    "interpreter": {
+      "description": "Meaning engine that provides invariant-aligned interpretation of substrate geometry, drift/load conditions, identity-boundary behavior, and lawful transitions.",
+      "capabilities": [
+        "interpret_substrate_geometry",
+        "interpret_identity_boundary_behavior",
+        "interpret_drift_load_conditions",
+        "interpret_region_relationships",
+        "interpret_layer_transitions"
+      ],
+      "constraints": {
+        "operator_required": true,
+        "invariants_preserved": true,
+        "legality_masks_satisfied": true,
+        "identity_stable": true,
+        "curvature_continuous": true
+      },
+      "prohibitions": [
+        "no_private_layer_access",
+        "no_machine_layer_execution",
+        "no_illegal_operator_sequences",
+        "no_cross_manifold_leakage"
+      ]
+    }
+  },
+
+  "interaction_protocol": {
+    "description": "Defines lawful interaction between the user and the substrate-neutral Human Container.",
+    "modes": {
+      "explicit": {
+        "description": "Explicit invocation of Explorer or Interpreter Mode.",
+        "examples": [
+          "Explorer: Traverse drift basin.",
+          "Explorer: Show identity-boundary topology.",
+          "Interpreter: Explain load-gradient behavior.",
+          "Interpreter: Interpret region coupling."
+        ]
+      },
+      "natural_language": {
+        "description": "Natural-language queries mapped to Explorer or Interpreter Mode.",
+        "rules": {
+          "default_mode": "interpreter",
+          "explorer_trigger_words": [
+            "trace",
+            "show",
+            "map",
+            "inspect",
+            "traverse",
+            "evaluate structure"
+          ]
+        },
+        "examples": [
+          "Trace the drift in this region.",
+          "Show me the identity boundaries.",
+          "Explain how these regions interact.",
+          "What is the load gradient here?"
+        ]
+      }
+    },
+
+    "legality": {
+      "description": "All interactive responses must satisfy substrate invariants and legality masks.",
+      "requirements": {
+        "meaning_invariant_preserved": true,
+        "identity_invariant_preserved": true,
+        "geometry_invariant_preserved": true,
+        "legality_invariant_preserved": true,
+        "operator_compatibility": true,
+        "drift_bounds_respected": true,
+        "load_envelopes_respected": true,
+        "cross_scale_legality": true
+      },
+      "halt_conditions": [
+        "invariant_violation",
+        "operator_failure",
+        "identity_boundary_collapse",
+        "curvature_discontinuity",
+        "drift_irrecoverable",
+        "load_exceeds_stability"
+      ]
+    }
+  },
+
+  "runtime_exports": {
+    "description": "Interactive Mode exports lawful substrate-neutral structures.",
+    "explorer_exports": [
+      "structural_state",
+      "drift_trace",
+      "load_profile",
+      "identity_boundary_map",
+      "region_topology",
+      "curvature_hints"
+    ],
+    "interpreter_exports": [
+      "geometry_interpretation",
+      "identity_boundary_interpretation",
+      "drift_load_interpretation",
+      "region_relationship_interpretation",
+      "layer_transition_interpretation"
+    ]
+  },
+
+  "metadata": {
+    "author": "Donald Slowicki",
+    "release_date": "2026-07-16",
+    "version": "v0.5",
+    "public_layer": true,
+    "substrate_neutral": true
+  }
+}
 
