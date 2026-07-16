@@ -1,1 +1,182 @@
+{
+  "version": "v0.5",
+  "schema_type": "dslo_semantic_substrate",
+  "description": "Public-layer semantic schema defining invariant structure, operator algebra, manifold geometry, legality masks, and runtime envelopes for DSLO v0.5.",
+
+  "invariants": {
+    "meaning_invariant": {
+      "description": "Semantic curvature must remain continuous and preserved.",
+      "fields": ["curvature_profile", "semantic_continuity"]
+    },
+    "identity_invariant": {
+      "description": "Identity boundaries must remain coherent, non-permeable, and stable.",
+      "fields": ["identity_regions", "boundary_integrity"]
+    },
+    "geometry_invariant": {
+      "description": "All reasoning must remain on the semantic manifold.",
+      "fields": ["manifold_coordinates", "region_topology"]
+    },
+    "legality_invariant": {
+      "description": "All transitions must satisfy legality masks and operator constraints.",
+      "fields": ["legality_status", "operator_compatibility"]
+    }
+  },
+
+  "operator_algebra": {
+    "SGO": {
+      "name": "State-Geometry Operator",
+      "requirements": [
+        "curvature_preserved",
+        "manifold_continuity"
+      ]
+    },
+    "MGO": {
+      "name": "Meaning-Geometry Operator",
+      "requirements": [
+        "meaning_role_coherence",
+        "semantic_alignment"
+      ]
+    },
+    "BO": {
+      "name": "Boundary Operator",
+      "requirements": [
+        "identity_boundary_stable",
+        "boundary_legal"
+      ]
+    },
+    "MLO": {
+      "name": "Meta-Legality Operator",
+      "requirements": [
+        "legality_masks_satisfied",
+        "invariant_structure_stable"
+      ]
+    }
+  },
+
+  "manifold_geometry": {
+    "regions": {
+      "identity_regions": {
+        "description": "Stable identity-boundary regions.",
+        "fields": ["region_id", "boundary_topology", "stability_flag"]
+      },
+      "role_regions": {
+        "description": "Role geometry and lawful semantic roles.",
+        "fields": ["role_id", "role_curvature", "compatibility_map"]
+      },
+      "drift_basins": {
+        "description": "Regions where drift accumulates and must remain recoverable.",
+        "fields": ["drift_vector", "drift_envelope"]
+      },
+      "load_gradients": {
+        "description": "Regions encoding load and stress geometry.",
+        "fields": ["load_vector", "gradient_profile"]
+      },
+      "collapse_boundaries": {
+        "description": "Regions near collapse curvature thresholds.",
+        "fields": ["collapse_threshold", "boundary_distance"]
+      }
+    },
+
+    "constraints": {
+      "curvature_max": 1.0,
+      "drift_recoverable": 0.7,
+      "drift_irrecoverable": 1.0,
+      "load_stability_max": 0.8,
+      "collapse_threshold": 0.95
+    }
+  },
+
+  "legality_masks": {
+    "local_masks": {
+      "curvature_continuity": true,
+      "identity_stability": true,
+      "drift_bounded": true,
+      "load_neutral": true
+    },
+    "global_masks": {
+      "clcp_valid": true,
+      "cross_layer_legal": true,
+      "manifold_distance_legal": true
+    }
+  },
+
+  "state_machine": {
+    "states": [
+      "S0_initialization",
+      "S1_identity_signal",
+      "S2_boundary_role",
+      "S3_drift",
+      "S4_load_stress",
+      "S5_cross_scale_coupling",
+      "S6_collapse_stability",
+      "S7_dynamic_substrate_runtime"
+    ],
+    "transition_rules": {
+      "operator_required": true,
+      "invariants_preserved": true,
+      "clcp_required": true
+    }
+  },
+
+  "runtime": {
+    "context_window_geometry": {
+      "fields": [
+        "signal_set",
+        "identity_refs",
+        "temporal_metadata",
+        "region_associations"
+      ],
+      "constraints": {
+        "saturation_max": 64,
+        "scope_max": 8,
+        "temporal_window_max": 4096
+      }
+    },
+
+    "dynamic_field_geometry": {
+      "embedding_requirements": [
+        "identity_boundary_intact",
+        "signal_coherence_min",
+        "curvature_violation_false",
+        "drift_recoverable",
+        "legality_masks_satisfied"
+      ],
+      "quarantine_region": {
+        "allowed": true,
+        "operator_access": false,
+        "dsup_access": false
+      }
+    },
+
+    "dsup": {
+      "state_fields": [
+        "curvature_profile",
+        "drift_vector",
+        "identity_regions",
+        "legality_status",
+        "region_configuration"
+      ],
+      "update_constraints": {
+        "invariants_preserved": true,
+        "operator_sequence_lawful": true,
+        "drift_recoverable": true,
+        "curvature_continuous": true
+      },
+      "halt_conditions": [
+        "drift_irrecoverable",
+        "identity_boundary_collapse",
+        "curvature_discontinuity",
+        "operator_violation",
+        "legality_invariant_violated"
+      ]
+    }
+  },
+
+  "metadata": {
+    "author": "Donald Slowicki",
+    "release_date": "2026-07-16",
+    "version": "v0.5",
+    "public_layer": true
+  }
+}
 
