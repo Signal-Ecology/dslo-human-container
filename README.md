@@ -148,21 +148,17 @@ Semantic appendices (existence‑only stubs)
 
 ---
 Semantic OS (substrate/)
-semantic_os.json provides the machine‑readable semantic operating system, including:
+The substrate/ folder contains the public‑safe, substrate‑neutral JSON surfaces for the DSLO Human Container. These files define the lawful semantic geometry used by AI systems to interpret human invariants, drift, load, collapse, and recovery without exposing private math or machine‑layer encoding.
 
-invariants
-
-behavioral modes
-
-views
-
-rules
-
-lawful transitions
-
-drift → load → collapse → recovery sequences
-
-interactive human mode API
+substrate/
+│   semantic_os.json
+│   invariants.json
+│   operators.json
+│   manifold_geometry.json
+│   legality_masks.json
+│   dsup_runtime.json
+│   transitions.json
+│   interactive_mode.json
 
 
 ---
