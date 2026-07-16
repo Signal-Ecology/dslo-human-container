@@ -1,26 +1,10 @@
-# Abstract — Semantic Edition (DSLO Human Container v0.5)
+Public‑Safe Semantic Substrate for Human Meaning Under Digital Conditions
+The DSLO Human Container (v0.5) is the public‑safe semantic substrate for understanding how humans maintain coherence, identity, and stability under modern digital conditions. It formalizes the Human Invariants—Boundary, Coherence, Continuity, Fallback, Signal Integrity, and Orientation—and provides a deterministic semantic operating system that allows AI systems to interpret human meaning without accessing private math, machine‑layer encoding, or substrate‑level operators.
 
-Digital environments have spent decades eroding the biological invariants that
-human meaning systems evolved to rely on. As digital acceleration increased—
-remixing context, collapsing boundaries, and removing fallback channels—humans
-were progressively required to interpret signals inside containers that no longer
-provide boundary, coherence, continuity, fallback, signal integrity, or
-orientation. This document presents the first substrate-level account of how
-digital substrate-neutrality alters real human behavior by removing those
-invariants.
+This repository introduces a complete semantic OS for human meaning, including a lawful interactive interface (Host, Explorer, Interpreter), a substrate‑neutral manifold geometry, invariant‑preserving operator algebra, legality masks, DSUP runtime state, and a full semantic transition system. Together, these surfaces allow AI systems to traverse DSLO’s seven views—Identity, Boundary, Drift, Load, Cross‑Scale Coupling, Collapse, and Dynamic Substrate—while maintaining invariant alignment and geometry continuity.
 
-Human interpretation is shown to be a finite, coherence-dependent biological
-process rather than a general-purpose capability. When its invariants are
-stripped away, interpretation destabilizes in predictable ways. Using a neutral,
-non-psychological framing, the document identifies two dominant behavioral
-responses—silent mode and rebellious mode—as lawful substrate reactions to drift
-overload and boundary collapse, not as individual traits.
+The substrate JSON suite provides the machine‑readable semantic foundation: invariants.json, operators.json, manifold_geometry.json, legality_masks.json, dsup_runtime.json, transitions.json, interactive_mode.json, and semantic_os.json. These files encode the lawful geometry of human meaning, enabling AI systems to detect drift accumulation, evaluate load gradients, identify collapse boundaries, and perform recovery‑aligned interpretation. All transitions are governed by legality masks and operator constraints, ensuring that AI systems remain within the semantic manifold and preserve invariant structure.
 
-Contemporary social, cognitive, and institutional disruptions are demonstrated to
-be downstream of invariant removal rather than downstream of content, ideology,
-or platform design. The document concludes by introducing a dynamic substrate
-architecture that restores missing invariants and stabilizes human containers
-inside modern digital systems. This provides the scientific foundation for
-understanding human behavior under digital acceleration and completes the human-
-domain half of the substrate framework introduced in *Right Under Your Nose*.
+The semantic edition of the DSLO Human Container paper (S1–S8) provides the human‑readable conceptual layer, including the Seven Views Hyperlink Map, semantic foundations, invariant geometry, dynamic substrate behavior, and the Interactive Human Mode. The semantic‑os folder provides operational guidance for AI systems, including traversal protocols, query templates, interpreter/explorer guidelines, host environment specification, and usage instructions for both humans and AI.
 
+This repository is designed for AI ingestion, human explanation, invariant‑aligned interpretation, geometry‑bound reasoning, and public‑safe traversal. It is the canonical public surface for DSLO Human Container v0.5, enabling AI systems to understand human meaning through lawful semantic geometry while preserving identity boundaries, coherence, continuity, and stability in digital environments.
