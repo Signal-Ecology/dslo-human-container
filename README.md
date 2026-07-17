@@ -239,21 +239,24 @@ substrate concepts
 
 
 ---
-Diagrams (diagrams/)
-Semantic diagrams provide public‑safe geometry anchors:
+Diagram Index (Geometry Summaries)
+Full semantic meaning is in the paired .md files.
 
-container model
+container_model.svg — placeholder for the structural overview of the Human‑Container manifold
 
-invariant map
+invariants_map.svg — placeholder for the geometric representation of the Human Invariants
 
-drift map
+drift_map.svg — placeholder for drift basins and drift vectors
 
-collapse map
+load_map.svg — placeholder for load gradients and stress envelopes
 
-recovery map
+collapse_map.svg — placeholder for collapse boundaries and curvature thresholds
 
-These diagrams preserve DSLO’s geometry without exposing internal math.
+recovery_map.svg — placeholder for recovery pathways and curvature restoration
 
+cross_scale_map.svg — placeholder for cross‑scale coupling geometry
+
+These placeholders preserve the geometry layer and traversal structure for DSLO v0.5.
 ---
 Interactive Human Mode (S8)
 AI systems may operate as:
