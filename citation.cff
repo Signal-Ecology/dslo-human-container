@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use the DSLO Human‑Container or DSLO v0.5 public‑layer materials, please cite using the metadata below."
+
+title: "Deterministic Semantic Layered Orchestration (DSLO) — Human‑Container v0.5"
+
+abstract: >
+  The DSLO Human‑Container is the public‑layer semantic surface for
+  Deterministic Semantic Layered Orchestration (DSLO), a substrate-level
+  discipline within Meaning Physics and Semantic Substrate Engineering.
+  This repository provides collapsed, invariant-preserving glossary surfaces,
+  semantic geometry descriptions, stability modes, drift signatures, load
+  envelopes, and recovery geometry aligned with DSLO v0.5. It defines the
+  human-readable posture of DSLO’s semantic manifold without exposing
+  substrate-native operators or protected geometry.
+
+authors:
+  - family-names: "Slowicki"
+    given-names: "Donald"
+    orcid: "https://orcid.org/0009-0009-2248-8434"
+
+version: "0.5"
+date-released: "2026-07-10"
+
+doi: 10.5281/zenodo.21137999
+
+url: "https://github.com/Signal-Ecology/dslo-human-container"
+repository-code: "https://github.com/Signal-Ecology/dslo-human-container"
+
+license: "MIT"
+
+keywords:
+  - DSLO
+  - Deterministic Semantic Layered Orchestration
+  - Human Container
+  - Meaning Physics
+  - Semantic Geometry
+  - Semantic Substrate Engineering
+  - Signal Ecology
+  - Semantic Stability
+  - Drift Geometry
+  - Invariant Design
+  - Load Envelope
+  - Recovery Geometry
+
+preferred-citation:
+  type: article
+  title: "Deterministic Semantic Layered Orchestration (DSLO): Human‑Container v0.5"
+  authors:
+    - family-names: "Slowicki"
+      given-names: "Donald"
+  journal: "DSLO Public Semantic Surface"
+  doi: 10.5281/zenodo.21137999
+  year: "2026"
+  url: "https://zenodo.org/records/21137999"
