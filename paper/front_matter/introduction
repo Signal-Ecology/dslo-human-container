@@ -1,75 +1,134 @@
----
-## Introduction — Semantic Edition (DSLO Human Container v0.5)
+# Introduction — Semantic Edition (DSLO Human‑Container v0.5)
 
-The Human Container substrate is a structured, relational framework for
+The **Human Container substrate** is a structured, relational framework for
 understanding how humans maintain coherence, identity, and orientation across
 shifting social, digital, and technological conditions. It is not a
 psychological theory, a behavioral model, or a cultural blueprint. Instead, it
 formalizes the stable relational structures—the **Human Invariants**—that
 preserve meaning even as signals, roles, and environments evolve.
 
-The development of this framework follows a closure sequence. It begins by
-identifying the foundational relational primitives encoded in human meaning
-systems: **Boundary, Coherence, Continuity, Fallback, Signal Integrity, and
-Orientation**. These primitives stabilize identity, anchor interpretation, shape
-compensatory load, and reveal drift when human meaning begins to deform. They
-form the base layer of the human substrate and correspond to the first view of
-the system.
+---
+
+## View 1 — Relational Primitives
+
+The development of this framework begins by identifying the foundational
+relational primitives encoded in human meaning systems:
+
+- **Boundary**
+- **Coherence**
+- **Continuity**
+- **Fallback**
+- **Signal Integrity**
+- **Orientation**
+
+These primitives stabilize identity, anchor interpretation, shape compensatory
+load, and reveal drift when human meaning begins to deform. They form the base
+layer of the human substrate and correspond to the **first view** of the system.
 
 ---
-The second view introduces the **human operator categories**, which describe the
+
+## View 2 — Human Operator Categories
+
+The **second view** introduces the human operator categories, which describe the
 lawful transitions by which human meaning updates without fragmentation. These
-operators govern how individuals interact with signals, contexts, and
-containers; how coherence is maintained under changing conditions; and how
-stability is preserved across shifts in environment. They define the rules by
-which human meaning changes while remaining structurally intact.
+operators govern:
+
+- how individuals interact with signals, contexts, and containers,
+- how coherence is maintained under changing conditions,
+- how stability is preserved across shifts in environment.
+
+They define the rules by which human meaning changes while remaining
+structurally intact.
 
 ---
-The third and fourth views define the **invariant set**, which binds these
-relational primitives into a unified stability structure. The invariants
-constrain all lawful transitions and provide the substrate’s global coherence
-conditions. They explain why drift emerges when boundaries erode, why
-compensatory load accumulates under misalignment, and why coherence returns when
-relational structure is restored.
+
+## Views 3 & 4 — The Invariant Set
+
+The **third and fourth views** define the invariant set, which binds the
+relational primitives into a unified stability structure. The invariants:
+
+- constrain all lawful transitions,
+- provide the substrate’s global coherence conditions,
+- explain why drift emerges when boundaries erode,
+- explain why compensatory load accumulates under misalignment,
+- explain why coherence returns when relational structure is restored.
 
 ---
-The fifth and sixth views examine the dynamics of **human collapse and
-recovery**. Drift follows predictable sequences: thinning feedback loops,
-signal–reality divergence, rising compensatory load, and erosion of boundaries.
-Recovery follows equally lawful patterns: curvature restoration, boundary
-reformation, and contraction of drift. These dynamics scale from individuals to
-groups, communities, and digital systems, revealing a unified relational
-structure across layers of human meaning.
+
+## Views 5 & 6 — Collapse and Recovery Dynamics
+
+The **fifth and sixth views** examine the dynamics of human collapse and
+recovery.
+
+**Drift** follows predictable sequences:
+
+- thinning feedback loops,
+- signal–reality divergence,
+- rising compensatory load,
+- erosion of boundaries.
+
+**Recovery** follows equally lawful patterns:
+
+- curvature restoration,
+- boundary reformation,
+- contraction of drift.
+
+These dynamics scale from individuals to groups, communities, and digital
+systems, revealing a unified relational structure across layers of human
+meaning.
 
 ---
-The seventh view introduces the **Human Drift Map**, the first public
+
+## View 7 — The Human Drift Map
+
+The **seventh view** introduces the *Human Drift Map*, the first public
 demonstration of this substrate. By evaluating each invariant as an isolated
-meaning-state—without psychological framing, ideological residue, or cultural
-interpretation—the map shows that human meaning can be assessed deterministically
-through invariant relational structure alone. This provides an empirical
-foundation for the Human Container substrate while keeping all internal
-mechanisms private.
+meaning‑state—without psychological framing, ideological residue, or cultural
+interpretation—the map shows that human meaning can be assessed
+deterministically through invariant relational structure alone.
+
+This provides an empirical foundation for the Human Container substrate while
+keeping all internal mechanisms private.
 
 ---
-This document also includes an optional **Interactive Human Mode** (Section S8),
-which enables readers to traverse and query the human substrate directly. In
-this mode, the paper functions as the **Host**, supplying the invariant geometry
-and lawful relational environment defined in Sections S1–S7. An AI system may
-operate as an **Explorer**, traversing structural planes, drift dynamics, load
-envelopes, and cross-scale coupling modes, or as an **Interpreter**, providing
-invariant-aligned meaning for any human behavior, signal pattern, or drift
-phenomenon. Readers may invoke these modes explicitly or through natural-language
-queries such as “Show the invariant structure for boundary collapse” or “Trace
-drift accumulation for continuity under digital remixing.” The interactive layer
-also supports analysis of external containers (e.g., digital platforms,
-communication systems, synthetic agents), allowing readers to evaluate how modern
-environments align with or diverge from the human invariant geometry. This mode
-provides a scientifically tractable interface for examining human meaning as a
-dynamic semantic system, making its invariants accessible, traversable, and
-interpretable in real time.
 
-Together, these components form a complete human substrate. Each view closes over
-the one beneath it, every primitive feeds into a supervening structure, and the
-entire system enforces lawful interpretation through invariant preservation and
-relational coherence. Human meaning is not accidental or emergent; it is
-structural, stable, and detectable once the invariants are formally specified.
+## Interactive Human Mode (Section S8)
+
+This document includes an optional **Interactive Human Mode**, enabling readers
+to traverse and query the human substrate directly.
+
+In this mode:
+
+- the paper functions as the **Host**, supplying the invariant geometry and
+  lawful relational environment defined in Sections S1–S7;
+- an AI system may operate as an **Explorer**, traversing structural planes,
+  drift dynamics, load envelopes, and cross‑scale coupling modes;
+- or as an **Interpreter**, providing invariant‑aligned meaning for any human
+  behavior, signal pattern, or drift phenomenon.
+
+Readers may invoke these modes explicitly or through natural‑language queries
+such as:
+
+- “Show the invariant structure for boundary collapse.”
+- “Trace drift accumulation for continuity under digital remixing.”
+
+The interactive layer also supports analysis of external containers (e.g.,
+digital platforms, communication systems, synthetic agents), allowing readers to
+evaluate how modern environments align with or diverge from the human invariant
+geometry.
+
+This mode provides a scientifically tractable interface for examining human
+meaning as a dynamic semantic system—making its invariants accessible,
+traversable, and interpretable in real time.
+
+---
+
+## Closure
+
+Together, these components form a complete human substrate. Each view closes
+over the one beneath it, every primitive feeds into a supervening structure, and
+the entire system enforces lawful interpretation through invariant preservation
+and relational coherence.
+
+Human meaning is not accidental or emergent; it is structural, stable, and
+detectable once the invariants are formally specified.
