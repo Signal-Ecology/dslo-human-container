@@ -61,7 +61,8 @@ semantic-os/
 
 
 ---
-Repository Structure
+Repository Structure:
+
 dslo-human-container/
 │
 ├── README.md
@@ -138,12 +139,25 @@ dslo-human-container/
 │
 ├── diagrams/
 │   ├── container_model.svg
+│   ├── container_model.md
+│   │
 │   ├── invariants_map.svg
+│   ├── invariants_map.md
+│   │
 │   ├── drift_map.svg
+│   ├── drift_map.md
+│   │
 │   ├── load_map.svg
+│   ├── load_map.md
+│   │
 │   ├── collapse_map.svg
+│   ├── collapse_map.md
+│   │
 │   ├── recovery_map.svg
-│   └── cross_scale_map.svg
+│   ├── recovery_map.md
+│   │
+│   ├── cross_scale_map.svg
+│   └── cross_scale_map.md
 │
 └── semantic-os/
     ├── traversal_protocols.md
@@ -154,6 +168,8 @@ dslo-human-container/
     │
     ├── how-ai-should-use-this-repository.md
     └── how-humans-should-use-this-repository.md
+
+
 
 
 
