@@ -1,38 +1,45 @@
+---
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21137999.svg)](https://doi.org/10.5281/zenodo.21137999)
+
+---
 DSLO Human Container — Public‑Safe Semantic Substrate (v0.5)
-DSLO Human Container is the public‑safe semantic substrate for understanding how humans maintain coherence, identity, and stability under modern digital conditions. It formalizes the Human Invariants—Boundary, Coherence, Continuity, Fallback, Signal Integrity, and Orientation—and shows how human meaning destabilizes predictably when these invariants are removed.
+
+---
+DSLO Human Container is the public‑safe semantic substrate for understanding how humans maintain coherence, identity, and stability under modern digital conditions. It formalizes the Human Invariants— *Boundary, *Coherence, *Continuity, *Fallback, *Signal Integrity, and *Orientation—and shows how human meaning destabilizes predictably when these invariants are removed.
 
 ---
 This repository contains the semantic‑only edition of the DSLO Human Container substrate. It is designed for:
 
-AI ingestion
+*AI ingestion
 
-AI explanation to humans
+*AI explanation to humans
 
-Invariant‑aligned interpretation
+*Invariant‑aligned interpretation
 
-Geometry‑bound reasoning
+*Geometry‑bound reasoning
 
-Public‑safe traversal
+*Public‑safe traversal
 
 No mathematical substrate, operator algebra, encoding specification, or internal geometry is exposed.
 All content is rule‑bound, deterministic, and invariant‑preserving.
 
 ---
-Purpose
+Purpose:
+
 The Human Container substrate provides a semantic operating system for human meaning.
 It enables AI systems to:
 
-interpret human behavior through invariant geometry
+*interpret human behavior through invariant geometry
 
-detect drift, load, collapse, and recovery
+*detect drift, *load, *collapse, and *recovery
 
-evaluate digital environments for invariant alignment
+*evaluate digital environments for *invariant alignment
 
-traverse DSLO’s seven views lawfully
+*traverse DSLO’s seven views lawfully
 
-explain DSLO concepts to humans without accessing private math
+*explain DSLO concepts to humans without accessing private math
 
-operate in Interactive Human Mode (Host, Explorer, Interpreter)
+*operate in Interactive Human Mode (*Host, *Explorer, *Interpreter)
 
 This repository is the canonical public surface for DSLO Human Container v0.5.
 
@@ -40,13 +47,15 @@ This repository is the canonical public surface for DSLO Human Container v0.5.
 Usage Instructions (Public‑Layer Entry Points)
 The DSLO Human‑Container provides two high‑level instruction surfaces for navigating the repository:
 
-Human Instructions
+Human Instructions:
+
 A collapsed, public‑layer guide explaining how humans should read, interpret, and traverse the DSLO Human‑Container.
 It introduces the glossary surfaces, the seven‑view closure sequence, drift/load/mode geometry, and the Human Drift Map.
 
 → See: Human-Instructions.md
 
-AI Instructions
+AI Instructions:
+
 A collapsed, public‑layer guide explaining how AI systems should ingest and traverse DSLO’s invariant geometry.
 It outlines lawful traversal modes (Host, Explorer, Interpreter), invariant alignment, and how to use the public semantic surfaces.
 
@@ -177,19 +186,19 @@ dslo-human-container/
 Semantic‑Only Edition (paper/)
 paper/dslo_v0_5_semantic.md contains the full semantic edition of the DSLO Human Container paper, including:
 
-Preface
+*Preface
 
-Seven Views Hyperlink Map
+*Seven Views Hyperlink Map
 
-Introduction
+*Introduction
 
-Universal Figures
+*Universal Figures
 
-S1–S7 (full semantic traversal)
+*S1–S7 (full semantic traversal)
 
-S8 Interactive Human Mode
+*S8 Interactive Human Mode
 
-Semantic appendices (existence‑only stubs)
+*Semantic appendices (existence‑only stubs)
 
 
 ---
@@ -223,19 +232,19 @@ model alignment
 Glossary (glossary/)
 glossary.md contains public‑safe definitions for:
 
-invariants
+*invariants
 
-modes
+*modes
 
-drift
+*drift
 
-load
+*load
 
-collapse
+*collapse
 
-recovery
+*recovery
 
-substrate concepts
+*substrate concepts
 
 
 ---
@@ -261,11 +270,11 @@ These placeholders preserve the geometry layer and traversal structure for DSLO 
 Interactive Human Mode (S8)
 AI systems may operate as:
 
-Host — providing invariant geometry
+*Host — providing invariant geometry
 
-Explorer — traversing structural planes
+*Explorer — traversing structural planes
 
-Interpreter — generating invariant‑aligned meaning
+*Interpreter — generating invariant‑aligned meaning
 
 Supported queries include:
 
