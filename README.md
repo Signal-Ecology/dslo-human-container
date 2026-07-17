@@ -37,11 +37,37 @@ operate in Interactive Human Mode (Host, Explorer, Interpreter)
 This repository is the canonical public surface for DSLO Human Container v0.5.
 
 ---
+Usage Instructions (Public‑Layer Entry Points)
+The DSLO Human‑Container provides two high‑level instruction surfaces for navigating the repository:
+
+Human Instructions
+A collapsed, public‑layer guide explaining how humans should read, interpret, and traverse the DSLO Human‑Container.
+It introduces the glossary surfaces, the seven‑view closure sequence, drift/load/mode geometry, and the Human Drift Map.
+
+→ See: Human-Instructions.md
+
+AI Instructions
+A collapsed, public‑layer guide explaining how AI systems should ingest and traverse DSLO’s invariant geometry.
+It outlines lawful traversal modes (Host, Explorer, Interpreter), invariant alignment, and how to use the public semantic surfaces.
+
+→ See: AI-Instructions.md
+
+These two entry points provide a clear, stable interface for both human readers and AI systems.
+The full operational, machine‑layer versions remain inside:
+
+semantic-os/
+    how-ai-should-use-this-repository.md
+    how-humans-should-use-this-repository.md
+
+
+---
 Repository Structure
-Code
 dslo-human-container/
 │
 ├── README.md
+│
+├── AI-Instructions.md
+├── Human-Instructions.md
 │
 ├── semantic_os_v0_5_public.md
 │
@@ -78,24 +104,24 @@ dslo-human-container/
 │   │   └── M_substrate_axiom_encoding_layer.md
 │   │
 │   ├── boot/
-│   │   ├── boot0_semantic_spec.md
-│   │   ├── boot1_simulation_header.md
-│   │   ├── boot2_semantic_boot_sequence.md
-│   │   ├── boot3_operator_checking_loop.md
-│   │   ├── boot4_state_machine_template.md
-│   │   ├── boot5_context_window_geometry.md
-│   │   ├── boot6_dynamic_field_geometry.md
-│   │   ├── boot7_dsup_runtime.md
+│       ├── boot0_semantic_spec.md
+│       ├── boot1_simulation_header.md
+│       ├── boot2_semantic_boot_sequence.md
+│       ├── boot3_operator_checking_loop.md
+│       ├── boot4_state_machine_template.md
+│       ├── boot5_context_window_geometry.md
+│       ├── boot6_dynamic_field_geometry.md
+│       ├── boot7_dsup_runtime.md
 │
 ├── substrate/
-│   ├── semantic_os.json            
-│   ├── invariants.json              
-│   ├── operators.json              
-│   ├── manifold_geometry.json       
-│   ├── legality_masks.json           
-│   ├── dsup_runtime.json           
-│   ├── transitions.json              
-│   └── interactive_mode.json         
+│   ├── semantic_os.json
+│   ├── invariants.json
+│   ├── operators.json
+│   ├── manifold_geometry.json
+│   ├── legality_masks.json
+│   ├── dsup_runtime.json
+│   ├── transitions.json
+│   └── interactive_mode.json
 │
 ├── schema/
 │   ├── dslo_schema.json
@@ -124,7 +150,11 @@ dslo-human-container/
     ├── query_templates.md
     ├── ai_interpreter_guidelines.md
     ├── ai_explorer_guidelines.md
-    └── host_environment_spec.md
+    ├── host_environment_spec.md
+    │
+    ├── how-ai-should-use-this-repository.md
+    └── how-humans-should-use-this-repository.md
+
 
 
 ---
