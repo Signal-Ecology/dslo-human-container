@@ -1,5 +1,5 @@
 ---
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21137999.svg)](https://doi.org/10.5281/zenodo.21137999)
+**Zenodo DOI:** https://doi.org/10.5281/zenodo.21137999
 
 ---
 DSLO Human Container — Public‑Safe Semantic Substrate (v0.5)
