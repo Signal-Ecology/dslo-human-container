@@ -1,114 +1,97 @@
 ---
 Diagram Surfaces — DSLO Human‑Container v0.5
-Semantic Geometry Maps + File References
 
 ---
-These diagrams visualize the semantic geometry of the DSLO Human‑Container.
-Each map corresponds to a collapsed surface in the glossary and provides a spatial representation of DSLO’s invariant structure, drift dynamics, load envelopes, collapse boundaries, and recovery pathways.
+Semantic Geometry Maps + File References (SVG + MD Pairing)
+
+The diagrams directory contains the full set of DSLO Human‑Container geometry surfaces.
+Each diagram is represented by two files:
+
+*an SVG file — currently a placeholder for future visual geometry
+
+*a paired MD file — containing the semantic interpretation of that geometry
+
+This separation preserves DSLO’s architectural rule:
+
+Geometry in one file, meaning in another.
+
+The SVGs will be populated later with the actual visual manifolds.
+The MD files already contain the complete semantic meaning for each diagram.
+
+Diagrams Directory Structure:
+
+diagrams/
+│
+├── container_model.svg        # placeholder geometry
+├── container_model.md         # semantic interpretation
+│
+├── invariants_map.svg         # placeholder geometry
+├── invariants_map.md          # semantic interpretation
+│
+├── drift_map.svg              # placeholder geometry
+├── drift_map.md               # semantic interpretation
+│
+├── load_map.svg               # placeholder geometry
+├── load_map.md                # semantic interpretation
+│
+├── collapse_map.svg           # placeholder geometry
+├── collapse_map.md            # semantic interpretation
+│
+├── recovery_map.svg           # placeholder geometry
+├── recovery_map.md            # semantic interpretation
+│
+├── cross_scale_map.svg        # placeholder geometry
+└── cross_scale_map.md         # semantic interpretation
+
+---
+Note:  
+The SVG files are intentionally empty placeholders at this stage.
+They reserve the geometry layer and maintain the correct traversal structure for DSLO v0.5.
+The MD files contain the full semantic content.
+
+---
+Diagram Index (Geometry Summaries)
+Full semantic meaning is in the paired .md files.
 
 ---
 container_model.svg
 
-**Description:
-
-A structural overview of the Human‑Container substrate.
-Shows how invariants, drift geometry, load gradients, collapse boundaries, and recovery pathways fit together as a unified semantic manifold.
-
-Purpose:
-
-Top‑level orientation
-
-Visual anchor for the entire repository
-
-Demonstrates DSLO’s layered semantic architecture
+Geometry Summary:  
+Placeholder for the structural overview of the Human‑Container substrate.
+Will visualize how *invariants, *drift geometry, *load gradients, *collapse boundaries, and *recovery pathways form a *unified semantic manifold.
 
 ---
 invariants_map.svg
 
-**Description: 
-
-A geometric representation of the six Human Invariants:
-Boundary, Coherence, Continuity, Fallback, Signal Integrity, Orientation.
-
-Purpose:
-
-Shows invariant relationships
-
-Visualizes stability conditions
-
-Provides a map of lawful meaning structure
+Geometry Summary:  
+Placeholder for the geometric representation of the six Human Invariants:
+*Boundary, *Coherence, *Continuity, *Fallback, *Signal Integrity, *Orientation.
 
 ---
 drift_map.svg
 
-**Description:  
-
-A spatial map of drift basins, drift vectors, thinning feedback loops, and divergence pathways.
-
-Purpose:
-
-Visualizes drift accumulation
-
-Shows how meaning deforms under misalignment
-
-Provides a deterministic geometry of collapse‑adjacent behavior
+Geometry Summary:  
+Placeholder for *drift basins, *drift vectors, *thinning feedback loops, and *divergence pathways.
 
 ---
 load_map.svg
 
-**Description:  
-
-A diagram of load gradients, compensatory load accumulation, stress envelopes, and load‑induced drift.
-
-Purpose:
-
-Shows how load builds under instability
-
-Visualizes stress geometry
-
-Connects load to drift and collapse dynamics
+Geometry Summary:  
+Placeholder for *load gradients, *compensatory load accumulation, *stress envelopes, and *load‑induced drift.
 
 ---
 collapse_map.svg
 
-**Description:  
-
-A geometric depiction of collapse boundaries, collapse basins, critical curvature thresholds, and collapse sequences.
-
-Purpose:
-
-Shows how collapse emerges
-
-Visualizes collapse‑adjacent geometry
-
-Provides a deterministic map of failure modes
+Geometry Summary:  
+Placeholder for *collapse boundaries, *collapse basins, *curvature thresholds, and *collapse sequences.
 
 ---
 recovery_map.svg
-
-**Description:  
-
-A map of recovery pathways, curvature restoration, boundary reformation, and drift contraction.
-
-Purpose:
-
-Shows lawful recovery sequences
-
-Visualizes return to invariant alignment
-
-Provides a geometry of stabilization
+Geometry Summary:  
+Placeholder for *recovery pathways, *curvature restoration, *boundary reformation, and *drift contraction.
 
 ---
 cross_scale_map.svg
 
-**Description:  
-
-A diagram showing how DSLO geometry scales across individuals, groups, communities, and digital systems.
-
-Purpose:
-
-Shows cross‑scale coupling
-
-Visualizes multi‑layer stability modes
-
-Connects micro‑geometry to macro‑geometry
+Geometry Summary:  
+Placeholder for cross‑scale coupling geometry across *individuals, *groups, *communities, *institutions, and *digital systems.
