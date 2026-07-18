@@ -71,7 +71,7 @@ semantic-os/
 
 ---
 Repository Structure:
-///json
+
 dslo-human-container/
 │
 ├── README.md
@@ -177,7 +177,7 @@ dslo-human-container/
     │
     ├── how-ai-should-use-this-repository.md
     └── how-humans-should-use-this-repository.md
-///
+
 
 
 
