@@ -301,3 +301,6 @@ License
 © 2026 Inda Moment Incorporated
 DSLO™ and Signal Ecology™ are trademarks of Inda Moment Incorporated.
 Released under a public‑safe license for semantic ingestion and research indexing.
+
+**Referenced DSLO v0.7 Artifacts**  
+**DOI Set — Substrate‑Skin (A0, A4, A5, A6, B1, F2)**
