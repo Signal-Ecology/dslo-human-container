@@ -1,6 +1,5 @@
 ---
 Diagram Surfaces — DSLO Human‑Container v0.5
-
 ---
 Semantic Geometry Maps + File References (SVG + MD Pairing)
 
