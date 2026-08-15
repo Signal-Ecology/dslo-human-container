@@ -6,7 +6,6 @@ Each term is a collapsed micro‑surface — a public‑safe representation of d
 ---
 
 Term	Description
-
 Collapse:	Reduction of distributed substrate meaning into a single, human‑readable form.
 
 Drift:	Deviation caused by ecological or systemic forces; corrected through lawful operators.
