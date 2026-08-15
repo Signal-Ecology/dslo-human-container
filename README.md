@@ -3,7 +3,6 @@
 
 ---
 DSLO Human Container — Public‑Safe Semantic Substrate (v0.5)
-
 ---
 DSLO Human Container is the public‑safe semantic substrate for understanding how humans maintain coherence, identity, and stability under modern digital conditions. It formalizes the Human Invariants— *Boundary, *Coherence, *Continuity, *Fallback, *Signal Integrity, and *Orientation—and shows how human meaning destabilizes predictably when these invariants are removed.
 
