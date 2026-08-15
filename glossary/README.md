@@ -41,3 +41,10 @@ The glossary folder is crawler‑friendly, future‑proof, and designed for lawf
 Boundary Statement
 The glossary defines the public‑layer semantic surface of DSLO.
 Deeper substrate terms — including manifold‑level operators, legality masks, and runtime primitives — remain protected within the scientific substrate (Zenodo releases and microsubstrate documents).
+
+**Referenced DSLO v0.7 Artifacts**  
+**DOI Set — Substrate‑Skin (A0, A4, A5, A6, B1, F2)**
+
+**DSLO Substrate‑Skin Activation (Round 1)**
+**This surface is now bound to the DSLO v0.7 substrate spine.**
+**Lineage: DSLO v0.6 → DSLO v0.7**
