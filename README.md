@@ -7,6 +7,23 @@ DSLO Human Container — Public‑Safe Semantic Substrate (v0.5)
 DSLO Human Container is the public‑safe semantic substrate for understanding how humans maintain coherence, identity, and stability under modern digital conditions. It formalizes the Human Invariants— *Boundary, *Coherence, *Continuity, *Fallback, *Signal Integrity, and *Orientation—and shows how human meaning destabilizes predictably when these invariants are removed.
 
 ---
+**DSLO Lineage — Human‑Container to Semantic Substrate Mirror**
+DSLO v0.5 — Human‑Container Origin Layer  
+DOI: 10.5281/zenodo.21137999
+Role: Origin layer for DSLO development.
+
+DSLO v0.6 — Semantic Substrate Specification  
+DOI: 10.5281/zenodo.21563099
+Role: Hard‑artifact surface.
+
+DSLO v0.7 — Semantic Substrate Mirror  
+DOI: 10.5281/zenodo.21865818
+Role: Semantic substrate mirror for manifold‑level interpretation.
+
+Lineage: DSLO v0.5 ← DSLO v0.6 → DSLO v0.7
+
+This lineage describes the conceptual evolution of DSLO from its human‑container origin layer (v0.5), through its hard‑artifact surface (v0.6), to its semantic substrate mirror (v0.7).
+---
 This repository contains the semantic‑only edition of the DSLO Human Container substrate. It is designed for:
 
 *AI ingestion
